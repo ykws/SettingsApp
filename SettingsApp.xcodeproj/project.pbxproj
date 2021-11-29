@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		08CA87942754D855009840E6 /* NameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08CA87932754D855009840E6 /* NameViewController.m */; };
+		08CA87982754D8DA009840E6 /* SettingsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 08CA87972754D8DA009840E6 /* SettingsModel.m */; };
+		08CA879E2754D9EB009840E6 /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08CA879D2754D9EB009840E6 /* AboutViewController.m */; };
 		08F398C826FF7D4C000F37E6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 08F398C726FF7D4C000F37E6 /* AppDelegate.m */; };
 		08F398CB26FF7D4C000F37E6 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 08F398CA26FF7D4C000F37E6 /* SceneDelegate.m */; };
 		08F398CE26FF7D4C000F37E6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08F398CD26FF7D4C000F37E6 /* ViewController.m */; };
@@ -20,6 +23,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		08CA87922754D855009840E6 /* NameViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NameViewController.h; sourceTree = "<group>"; };
+		08CA87932754D855009840E6 /* NameViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NameViewController.m; sourceTree = "<group>"; };
+		08CA87962754D8DA009840E6 /* SettingsModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SettingsModel.h; sourceTree = "<group>"; };
+		08CA87972754D8DA009840E6 /* SettingsModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SettingsModel.m; sourceTree = "<group>"; };
+		08CA879C2754D9EB009840E6 /* AboutViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AboutViewController.h; sourceTree = "<group>"; };
+		08CA879D2754D9EB009840E6 /* AboutViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AboutViewController.m; sourceTree = "<group>"; };
 		08F398C326FF7D4C000F37E6 /* SettingsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SettingsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		08F398C626FF7D4C000F37E6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		08F398C726FF7D4C000F37E6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -50,6 +59,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		08CA87912754D82F009840E6 /* NameViewController */ = {
+			isa = PBXGroup;
+			children = (
+				08CA87922754D855009840E6 /* NameViewController.h */,
+				08CA87932754D855009840E6 /* NameViewController.m */,
+			);
+			path = NameViewController;
+			sourceTree = "<group>";
+		};
+		08CA87952754D8B6009840E6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				08CA87962754D8DA009840E6 /* SettingsModel.h */,
+				08CA87972754D8DA009840E6 /* SettingsModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		08CA87992754D98C009840E6 /* AboutViewController */ = {
+			isa = PBXGroup;
+			children = (
+				08CA879C2754D9EB009840E6 /* AboutViewController.h */,
+				08CA879D2754D9EB009840E6 /* AboutViewController.m */,
+			);
+			path = AboutViewController;
+			sourceTree = "<group>";
+		};
 		08F398BA26FF7D4C000F37E6 = {
 			isa = PBXGroup;
 			children = (
@@ -69,6 +105,7 @@
 		08F398C526FF7D4C000F37E6 /* SettingsApp */ = {
 			isa = PBXGroup;
 			children = (
+				08CA87952754D8B6009840E6 /* Model */,
 				08F398EC2702448C000F37E6 /* View */,
 				08F398E9270243B3000F37E6 /* Controller */,
 				08F398D226FF7D4D000F37E6 /* Assets.xcassets */,
@@ -82,6 +119,8 @@
 		08F398E9270243B3000F37E6 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				08CA87992754D98C009840E6 /* AboutViewController */,
+				08CA87912754D82F009840E6 /* NameViewController */,
 				08F398EB27024469000F37E6 /* SettingsViewController */,
 				08F398EA2702444B000F37E6 /* MainViewController */,
 				08F398C626FF7D4C000F37E6 /* AppDelegate.h */,
@@ -200,9 +239,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				08CA879E2754D9EB009840E6 /* AboutViewController.m in Sources */,
 				08F398CE26FF7D4C000F37E6 /* ViewController.m in Sources */,
 				08F398C826FF7D4C000F37E6 /* AppDelegate.m in Sources */,
+				08CA87942754D855009840E6 /* NameViewController.m in Sources */,
 				08F398E7270224DB000F37E6 /* SettingsTableViewCell.m in Sources */,
+				08CA87982754D8DA009840E6 /* SettingsModel.m in Sources */,
 				08F398E126FF8182000F37E6 /* SettingsTableViewController.m in Sources */,
 				08F398D926FF7D4D000F37E6 /* main.m in Sources */,
 				08F398CB26FF7D4C000F37E6 /* SceneDelegate.m in Sources */,
