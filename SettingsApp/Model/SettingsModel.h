@@ -6,12 +6,14 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "SelectionModel.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface SettingsModel : NSObject
 
 @property (nonatomic) NSString *name;
+@property (nonatomic) SelectionModel *selectionModel;
 
 + (instancetype)sharedInstance;
 

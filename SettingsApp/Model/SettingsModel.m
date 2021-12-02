@@ -14,6 +14,12 @@
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         sharedInstance = [[SettingsModel alloc] init];
+        
+        SelectionModel *selectionModel = [[SelectionModel alloc] init];
+        selectionModel.row = 0;
+        selectionModel.value = @"0";
+        
+        sharedInstance.selectionModel = selectionModel;
     });
     return sharedInstance;
 }

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		08BBA7AD275912F400A9758C /* SelectionsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08BBA7AC275912F400A9758C /* SelectionsTableViewController.m */; };
+		08BBA7B0275917FE00A9758C /* SelectionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 08BBA7AF275917FE00A9758C /* SelectionModel.m */; };
 		08CA87942754D855009840E6 /* NameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08CA87932754D855009840E6 /* NameViewController.m */; };
 		08CA87982754D8DA009840E6 /* SettingsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 08CA87972754D8DA009840E6 /* SettingsModel.m */; };
 		08CA879E2754D9EB009840E6 /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08CA879D2754D9EB009840E6 /* AboutViewController.m */; };
@@ -18,11 +20,13 @@
 		08F398D626FF7D4D000F37E6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08F398D426FF7D4D000F37E6 /* LaunchScreen.storyboard */; };
 		08F398D926FF7D4D000F37E6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 08F398D826FF7D4D000F37E6 /* main.m */; };
 		08F398E126FF8182000F37E6 /* SettingsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08F398E026FF8182000F37E6 /* SettingsTableViewController.m */; };
-		08F398E7270224DB000F37E6 /* SettingsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 08F398E5270224DB000F37E6 /* SettingsTableViewCell.m */; };
-		08F398E8270224DB000F37E6 /* SettingsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 08F398E6270224DB000F37E6 /* SettingsTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		08BBA7AB275912F400A9758C /* SelectionsTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SelectionsTableViewController.h; sourceTree = "<group>"; };
+		08BBA7AC275912F400A9758C /* SelectionsTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SelectionsTableViewController.m; sourceTree = "<group>"; };
+		08BBA7AE275917FE00A9758C /* SelectionModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SelectionModel.h; sourceTree = "<group>"; };
+		08BBA7AF275917FE00A9758C /* SelectionModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SelectionModel.m; sourceTree = "<group>"; };
 		08CA87922754D855009840E6 /* NameViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NameViewController.h; sourceTree = "<group>"; };
 		08CA87932754D855009840E6 /* NameViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NameViewController.m; sourceTree = "<group>"; };
 		08CA87962754D8DA009840E6 /* SettingsModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SettingsModel.h; sourceTree = "<group>"; };
@@ -43,9 +47,6 @@
 		08F398D826FF7D4D000F37E6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		08F398DF26FF8182000F37E6 /* SettingsTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SettingsTableViewController.h; sourceTree = "<group>"; };
 		08F398E026FF8182000F37E6 /* SettingsTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SettingsTableViewController.m; sourceTree = "<group>"; };
-		08F398E4270224DB000F37E6 /* SettingsTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SettingsTableViewCell.h; sourceTree = "<group>"; };
-		08F398E5270224DB000F37E6 /* SettingsTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SettingsTableViewCell.m; sourceTree = "<group>"; };
-		08F398E6270224DB000F37E6 /* SettingsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingsTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +60,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		08BBA7AA275912D400A9758C /* SelectionsViewController */ = {
+			isa = PBXGroup;
+			children = (
+				08BBA7AB275912F400A9758C /* SelectionsTableViewController.h */,
+				08BBA7AC275912F400A9758C /* SelectionsTableViewController.m */,
+			);
+			path = SelectionsViewController;
+			sourceTree = "<group>";
+		};
 		08CA87912754D82F009840E6 /* NameViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -73,6 +83,8 @@
 			children = (
 				08CA87962754D8DA009840E6 /* SettingsModel.h */,
 				08CA87972754D8DA009840E6 /* SettingsModel.m */,
+				08BBA7AE275917FE00A9758C /* SelectionModel.h */,
+				08BBA7AF275917FE00A9758C /* SelectionModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -119,6 +131,7 @@
 		08F398E9270243B3000F37E6 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				08BBA7AA275912D400A9758C /* SelectionsViewController */,
 				08CA87992754D98C009840E6 /* AboutViewController */,
 				08CA87912754D82F009840E6 /* NameViewController */,
 				08F398EB27024469000F37E6 /* SettingsViewController */,
@@ -153,19 +166,8 @@
 			isa = PBXGroup;
 			children = (
 				08F398CF26FF7D4C000F37E6 /* Main.storyboard */,
-				08F398ED2702449F000F37E6 /* SettingsTableViewCell */,
 			);
 			path = View;
-			sourceTree = "<group>";
-		};
-		08F398ED2702449F000F37E6 /* SettingsTableViewCell */ = {
-			isa = PBXGroup;
-			children = (
-				08F398E6270224DB000F37E6 /* SettingsTableViewCell.xib */,
-				08F398E4270224DB000F37E6 /* SettingsTableViewCell.h */,
-				08F398E5270224DB000F37E6 /* SettingsTableViewCell.m */,
-			);
-			path = SettingsTableViewCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -227,7 +229,6 @@
 			files = (
 				08F398D626FF7D4D000F37E6 /* LaunchScreen.storyboard in Resources */,
 				08F398D326FF7D4D000F37E6 /* Assets.xcassets in Resources */,
-				08F398E8270224DB000F37E6 /* SettingsTableViewCell.xib in Resources */,
 				08F398D126FF7D4C000F37E6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -239,11 +240,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				08BBA7B0275917FE00A9758C /* SelectionModel.m in Sources */,
 				08CA879E2754D9EB009840E6 /* AboutViewController.m in Sources */,
+				08BBA7AD275912F400A9758C /* SelectionsTableViewController.m in Sources */,
 				08F398CE26FF7D4C000F37E6 /* ViewController.m in Sources */,
 				08F398C826FF7D4C000F37E6 /* AppDelegate.m in Sources */,
 				08CA87942754D855009840E6 /* NameViewController.m in Sources */,
-				08F398E7270224DB000F37E6 /* SettingsTableViewCell.m in Sources */,
 				08CA87982754D8DA009840E6 /* SettingsModel.m in Sources */,
 				08F398E126FF8182000F37E6 /* SettingsTableViewController.m in Sources */,
 				08F398D926FF7D4D000F37E6 /* main.m in Sources */,
