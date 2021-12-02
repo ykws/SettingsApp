@@ -1,5 +1,5 @@
 //
-//  SelectionsTableViewController.h
+//  SearchEngineTableViewController.h
 //  SettingsApp
 //
 //  Created by KAWASHIMA Yoshiyuki on 2021/12/02.
@@ -9,7 +9,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface SelectionsTableViewController : UITableViewController
+@interface SearchEngineTableViewController : UITableViewController
 
 @end
 

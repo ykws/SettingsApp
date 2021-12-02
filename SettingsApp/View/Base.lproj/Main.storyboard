@@ -11,7 +11,6 @@
         <!--Settings-->
         <scene sceneID="DKk-xm-FBl">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="fI0-qd-nmd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <tableViewController id="BbT-JH-Ldy" customClass="SettingsTableViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" estimatedSectionHeaderHeight="-1" sectionFooterHeight="18" estimatedSectionFooterHeight="-1" id="LP8-zF-sI0">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -44,22 +43,15 @@
                             </tableViewSection>
                             <tableViewSection id="dhs-NV-zzQ">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="5qS-bn-AoC" detailTextLabel="Ppj-hU-XgO" style="IBUITableViewCellStyleValue1" id="08B-Ke-PP9">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="bou-v8-eyP" style="IBUITableViewCellStyleDefault" id="08B-Ke-PP9">
                                         <rect key="frame" x="0.0" y="97.5" width="414" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="08B-Ke-PP9" id="9Dr-7T-zY4">
                                             <rect key="frame" x="0.0" y="0.0" width="384.5" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Selections" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="5qS-bn-AoC">
-                                                    <rect key="frame" x="20" y="15" width="59" height="14.5"/>
-                                                    <autoresizingMask key="autoresizingMask"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Ppj-hU-XgO">
-                                                    <rect key="frame" x="343.5" y="15" width="33" height="14.5"/>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Safari" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="bou-v8-eyP">
+                                                    <rect key="frame" x="20" y="0.0" width="356.5" height="43.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
                                                     <nil key="textColor"/>
@@ -68,7 +60,7 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="IXA-HL-L9I" kind="show" id="qte-Lo-uj6"/>
+                                            <segue destination="BYK-eU-R62" kind="show" id="sFx-y4-TUP"/>
                                         </connections>
                                     </tableViewCell>
                                 </cells>
@@ -80,10 +72,8 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Settings" id="Y4N-AA-9vz"/>
-                    <connections>
-                        <outlet property="selectionLabel" destination="Ppj-hU-XgO" id="51h-cL-aey"/>
-                    </connections>
                 </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fI0-qd-nmd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-90" y="98"/>
         </scene>
@@ -205,86 +195,99 @@
             </objects>
             <point key="canvasLocation" x="1550.7246376811595" y="97.767857142857139"/>
         </scene>
-        <!--Selections-->
+        <!--Search Engine-->
         <scene sceneID="hax-KC-k1p">
             <objects>
-                <tableViewController id="IXA-HL-L9I" customClass="SelectionsTableViewController" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="J7m-3l-uSH">
+                <tableViewController id="IXA-HL-L9I" customClass="SearchEngineTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" estimatedSectionHeaderHeight="-1" sectionFooterHeight="18" estimatedSectionFooterHeight="-1" id="J7m-3l-uSH">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <sections>
-                            <tableViewSection id="p62-KL-mVU">
-                                <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="fmW-qb-pH6" style="IBUITableViewCellStyleDefault" id="p1J-hb-qJ7">
-                                        <rect key="frame" x="0.0" y="44.5" width="414" height="43.5"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="p1J-hb-qJ7" id="ihQ-85-gYQ">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="searchEngineTableViewCell" textLabel="fmW-qb-pH6" style="IBUITableViewCellStyleDefault" id="p1J-hb-qJ7">
+                                <rect key="frame" x="0.0" y="49.5" width="414" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="p1J-hb-qJ7" id="ihQ-85-gYQ">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Google" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="fmW-qb-pH6">
+                                            <rect key="frame" x="20" y="0.0" width="374" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="fmW-qb-pH6">
-                                                    <rect key="frame" x="20" y="0.0" width="374" height="43.5"/>
-                                                    <autoresizingMask key="autoresizingMask"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="jCj-Nb-Flh" style="IBUITableViewCellStyleDefault" id="1Mx-5w-nga">
-                                        <rect key="frame" x="0.0" y="88" width="414" height="43.5"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="1Mx-5w-nga" id="6T7-y8-xFJ">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="jCj-Nb-Flh">
-                                                    <rect key="frame" x="20" y="0.0" width="374" height="43.5"/>
-                                                    <autoresizingMask key="autoresizingMask"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="u66-gk-Nik" style="IBUITableViewCellStyleDefault" id="Zip-bz-6iF">
-                                        <rect key="frame" x="0.0" y="131.5" width="414" height="43.5"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Zip-bz-6iF" id="hmi-n1-wQ8">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="u66-gk-Nik">
-                                                    <rect key="frame" x="20" y="0.0" width="374" height="43.5"/>
-                                                    <autoresizingMask key="autoresizingMask"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                </cells>
-                            </tableViewSection>
-                        </sections>
+                                            <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <sections/>
                         <connections>
                             <outlet property="dataSource" destination="IXA-HL-L9I" id="YfF-nH-SlH"/>
                             <outlet property="delegate" destination="IXA-HL-L9I" id="zRR-PJ-5xU"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Selections" id="4TX-rT-4dQ"/>
-                    <connections>
-                        <outlet property="firstSelectionTableViewCell" destination="p1J-hb-qJ7" id="vui-Ft-Qg5"/>
-                        <outlet property="secondSelectionTableViewCell" destination="1Mx-5w-nga" id="6rH-gm-FGV"/>
-                        <outlet property="thirdSelectionTableViewCell" destination="Zip-bz-6iF" id="IEA-iH-swy"/>
-                    </connections>
+                    <navigationItem key="navigationItem" title="Search Engine" id="4TX-rT-4dQ"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="i49-Ks-ctZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="719" y="830"/>
+            <point key="canvasLocation" x="1551" y="840"/>
+        </scene>
+        <!--Safari-->
+        <scene sceneID="JQ8-xq-jwb">
+            <objects>
+                <tableViewController id="BYK-eU-R62" customClass="SafariTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" estimatedSectionHeaderHeight="-1" sectionFooterHeight="18" estimatedSectionFooterHeight="-1" id="jSd-4k-aIs">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <sections>
+                            <tableViewSection headerTitle="SEARCH" id="bEt-eI-8Um">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="EkG-dZ-bYX" detailTextLabel="lfd-lC-DYl" style="IBUITableViewCellStyleValue1" id="Jyy-l7-mhX">
+                                        <rect key="frame" x="0.0" y="49.5" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Jyy-l7-mhX" id="Fgy-Qc-LRt">
+                                            <rect key="frame" x="0.0" y="0.0" width="384.5" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Search Engine" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="EkG-dZ-bYX">
+                                                    <rect key="frame" x="20" y="15" width="81" height="14.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="lfd-lC-DYl">
+                                                    <rect key="frame" x="343.5" y="15" width="33" height="14.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="IXA-HL-L9I" kind="show" id="UbN-Yd-Qvd"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="BYK-eU-R62" id="kcN-td-zTi"/>
+                            <outlet property="delegate" destination="BYK-eU-R62" id="mtX-wy-soT"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Safari" id="Uso-Vg-go6"/>
+                    <connections>
+                        <outlet property="searchEngineLabel" destination="lfd-lC-DYl" id="70J-Do-yF7"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iTY-U6-KWG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="719" y="840"/>
         </scene>
     </scenes>
     <resources>

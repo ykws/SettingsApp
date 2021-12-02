@@ -15,11 +15,10 @@
     dispatch_once(&onceToken, ^{
         sharedInstance = [[SettingsModel alloc] init];
         
-        SelectionModel *selectionModel = [[SelectionModel alloc] init];
-        selectionModel.row = 0;
-        selectionModel.value = @"0";
+        SearchEngineModel *searchEngineModel = [[SearchEngineModel alloc] init];
+        searchEngineModel.row = [SearchEngineModel defaultRow];
         
-        sharedInstance.selectionModel = selectionModel;
+        sharedInstance.searchEngineModel = searchEngineModel;
     });
     return sharedInstance;
 }

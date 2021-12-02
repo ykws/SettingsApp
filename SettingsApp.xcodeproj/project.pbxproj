@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		08BBA7AD275912F400A9758C /* SelectionsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08BBA7AC275912F400A9758C /* SelectionsTableViewController.m */; };
-		08BBA7B0275917FE00A9758C /* SelectionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 08BBA7AF275917FE00A9758C /* SelectionModel.m */; };
+		08BBA7AD275912F400A9758C /* SearchEngineTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08BBA7AC275912F400A9758C /* SearchEngineTableViewController.m */; };
+		08BBA7B0275917FE00A9758C /* SearchEngineModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 08BBA7AF275917FE00A9758C /* SearchEngineModel.m */; };
+		08BBA7B42759205F00A9758C /* SafariTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08BBA7B32759205F00A9758C /* SafariTableViewController.m */; };
 		08CA87942754D855009840E6 /* NameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08CA87932754D855009840E6 /* NameViewController.m */; };
 		08CA87982754D8DA009840E6 /* SettingsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 08CA87972754D8DA009840E6 /* SettingsModel.m */; };
 		08CA879E2754D9EB009840E6 /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08CA879D2754D9EB009840E6 /* AboutViewController.m */; };
@@ -23,10 +24,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		08BBA7AB275912F400A9758C /* SelectionsTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SelectionsTableViewController.h; sourceTree = "<group>"; };
-		08BBA7AC275912F400A9758C /* SelectionsTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SelectionsTableViewController.m; sourceTree = "<group>"; };
-		08BBA7AE275917FE00A9758C /* SelectionModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SelectionModel.h; sourceTree = "<group>"; };
-		08BBA7AF275917FE00A9758C /* SelectionModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SelectionModel.m; sourceTree = "<group>"; };
+		08BBA7AB275912F400A9758C /* SearchEngineTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SearchEngineTableViewController.h; sourceTree = "<group>"; };
+		08BBA7AC275912F400A9758C /* SearchEngineTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SearchEngineTableViewController.m; sourceTree = "<group>"; };
+		08BBA7AE275917FE00A9758C /* SearchEngineModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SearchEngineModel.h; sourceTree = "<group>"; };
+		08BBA7AF275917FE00A9758C /* SearchEngineModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SearchEngineModel.m; sourceTree = "<group>"; };
+		08BBA7B22759205F00A9758C /* SafariTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SafariTableViewController.h; sourceTree = "<group>"; };
+		08BBA7B32759205F00A9758C /* SafariTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SafariTableViewController.m; sourceTree = "<group>"; };
 		08CA87922754D855009840E6 /* NameViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NameViewController.h; sourceTree = "<group>"; };
 		08CA87932754D855009840E6 /* NameViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NameViewController.m; sourceTree = "<group>"; };
 		08CA87962754D8DA009840E6 /* SettingsModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SettingsModel.h; sourceTree = "<group>"; };
@@ -60,13 +63,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		08BBA7AA275912D400A9758C /* SelectionsViewController */ = {
+		08BBA7AA275912D400A9758C /* SearchEngineViewController */ = {
 			isa = PBXGroup;
 			children = (
-				08BBA7AB275912F400A9758C /* SelectionsTableViewController.h */,
-				08BBA7AC275912F400A9758C /* SelectionsTableViewController.m */,
+				08BBA7AB275912F400A9758C /* SearchEngineTableViewController.h */,
+				08BBA7AC275912F400A9758C /* SearchEngineTableViewController.m */,
 			);
-			path = SelectionsViewController;
+			path = SearchEngineViewController;
+			sourceTree = "<group>";
+		};
+		08BBA7B12759204000A9758C /* SafariViewController */ = {
+			isa = PBXGroup;
+			children = (
+				08BBA7B22759205F00A9758C /* SafariTableViewController.h */,
+				08BBA7B32759205F00A9758C /* SafariTableViewController.m */,
+			);
+			path = SafariViewController;
 			sourceTree = "<group>";
 		};
 		08CA87912754D82F009840E6 /* NameViewController */ = {
@@ -83,8 +95,8 @@
 			children = (
 				08CA87962754D8DA009840E6 /* SettingsModel.h */,
 				08CA87972754D8DA009840E6 /* SettingsModel.m */,
-				08BBA7AE275917FE00A9758C /* SelectionModel.h */,
-				08BBA7AF275917FE00A9758C /* SelectionModel.m */,
+				08BBA7AE275917FE00A9758C /* SearchEngineModel.h */,
+				08BBA7AF275917FE00A9758C /* SearchEngineModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -131,7 +143,8 @@
 		08F398E9270243B3000F37E6 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				08BBA7AA275912D400A9758C /* SelectionsViewController */,
+				08BBA7B12759204000A9758C /* SafariViewController */,
+				08BBA7AA275912D400A9758C /* SearchEngineViewController */,
 				08CA87992754D98C009840E6 /* AboutViewController */,
 				08CA87912754D82F009840E6 /* NameViewController */,
 				08F398EB27024469000F37E6 /* SettingsViewController */,
@@ -240,15 +253,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				08BBA7B0275917FE00A9758C /* SelectionModel.m in Sources */,
+				08BBA7B0275917FE00A9758C /* SearchEngineModel.m in Sources */,
 				08CA879E2754D9EB009840E6 /* AboutViewController.m in Sources */,
-				08BBA7AD275912F400A9758C /* SelectionsTableViewController.m in Sources */,
+				08BBA7AD275912F400A9758C /* SearchEngineTableViewController.m in Sources */,
 				08F398CE26FF7D4C000F37E6 /* ViewController.m in Sources */,
 				08F398C826FF7D4C000F37E6 /* AppDelegate.m in Sources */,
 				08CA87942754D855009840E6 /* NameViewController.m in Sources */,
 				08CA87982754D8DA009840E6 /* SettingsModel.m in Sources */,
 				08F398E126FF8182000F37E6 /* SettingsTableViewController.m in Sources */,
 				08F398D926FF7D4D000F37E6 /* main.m in Sources */,
+				08BBA7B42759205F00A9758C /* SafariTableViewController.m in Sources */,
 				08F398CB26FF7D4C000F37E6 /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

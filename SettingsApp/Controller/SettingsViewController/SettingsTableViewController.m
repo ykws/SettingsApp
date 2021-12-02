@@ -20,7 +20,7 @@
     [super viewWillAppear:animated];
     
     SettingsModel *model = [SettingsModel sharedInstance];
-    self.selectionLabel.text = model.selectionModel.value;
+    self.selectionLabel.text = model.searchEngineModel.value;
 }
 
 @end
