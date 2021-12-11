@@ -362,13 +362,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="1" maxValue="10" continuous="NO" minimumValueImage="1.square" catalog="system" maximumValueImage="10.square" translatesAutoresizingMaskIntoConstraints="NO" id="IJs-JC-Kcn">
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="1" maxValue="9" continuous="NO" minimumValueImage="1.square" catalog="system" maximumValueImage="9.square" translatesAutoresizingMaskIntoConstraints="NO" id="IJs-JC-Kcn">
                                 <rect key="frame" x="18" y="812" width="378" height="31"/>
                                 <connections>
                                     <action selector="sliderDidChange:" destination="fug-K8-UYd" eventType="valueChanged" id="uRV-ue-eAl"/>
                                 </connections>
                             </slider>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hn8-wn-odq">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hn8-wn-odq">
                                 <rect key="frame" x="20" y="128" width="374" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -398,7 +398,7 @@
     </scenes>
     <resources>
         <image name="1.square" catalog="system" width="128" height="114"/>
-        <image name="10.square" catalog="system" width="128" height="114"/>
+        <image name="9.square" catalog="system" width="128" height="114"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

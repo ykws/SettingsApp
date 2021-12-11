@@ -28,7 +28,7 @@
 - (NSString *)sliderStringWithValue:(int)value {
     NSString *sliderString = @"";
     
-    for (int i = 1; i < value; i++) {
+    for (int i = 1; i <= value; i++) {
         sliderString = [sliderString stringByAppendingFormat:@"%d", i];
     }
     
