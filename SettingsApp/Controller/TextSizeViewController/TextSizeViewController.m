@@ -6,10 +6,12 @@
 //
 
 #import "TextSizeViewController.h"
+#import "StepSlider.h"
 
 @interface TextSizeViewController ()
 
 @property (weak, nonatomic) IBOutlet UILabel *previewLabel;
+@property (weak, nonatomic) IBOutlet StepSlider *stepSlider;
 
 @end
 
@@ -17,12 +19,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    self.stepSlider.labels = @[@"1", @"2", @"3", @"4", @"5", @"6", @"7", @"8", @"9"];
 }
 
-- (IBAction)sliderDidChange:(UISlider *)sender {
-    [sender setValue:round(sender.value) animated:YES];
-    
-    self.previewLabel.text = [self sliderStringWithValue:(int)sender.value];
+- (IBAction)sliderDidChange:(StepSlider *)sender {
+    self.previewLabel.text = [self sliderStringWithValue:(int)sender.index + 1];
 }
 
 - (NSString *)sliderStringWithValue:(int)value {

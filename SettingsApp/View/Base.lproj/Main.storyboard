@@ -362,43 +362,55 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="1" maxValue="9" continuous="NO" minimumValueImage="1.square" catalog="system" maximumValueImage="9.square" translatesAutoresizingMaskIntoConstraints="NO" id="IJs-JC-Kcn" customClass="TouchableSlider">
-                                <rect key="frame" x="18" y="812" width="378" height="31"/>
-                                <connections>
-                                    <action selector="sliderDidChange:" destination="fug-K8-UYd" eventType="valueChanged" id="uRV-ue-eAl"/>
-                                </connections>
-                            </slider>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hn8-wn-odq">
-                                <rect key="frame" x="20" y="128" width="374" height="21"/>
+                                <rect key="frame" x="20" y="128" width="374" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cDX-Uk-dEo" customClass="StepSlider">
+                                <rect key="frame" x="20" y="818" width="374" height="44"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="vea-Pu-lzR"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="maxCount">
+                                        <integer key="value" value="9"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="index">
+                                        <integer key="value" value="0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="enableHapticFeedback" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="sliderDidChange:" destination="fug-K8-UYd" eventType="valueChanged" id="02b-eN-hhl"/>
+                                </connections>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="0eV-ei-HHI"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="0eV-ei-HHI" firstAttribute="trailing" secondItem="hn8-wn-odq" secondAttribute="trailing" constant="20" id="1m3-Q6-lzK"/>
+                            <constraint firstItem="cDX-Uk-dEo" firstAttribute="bottom" secondItem="0eV-ei-HHI" secondAttribute="bottom" id="AeG-yB-e5s"/>
                             <constraint firstItem="hn8-wn-odq" firstAttribute="leading" secondItem="0eV-ei-HHI" secondAttribute="leading" constant="20" id="BKN-lT-eS3"/>
-                            <constraint firstItem="0eV-ei-HHI" firstAttribute="trailing" secondItem="IJs-JC-Kcn" secondAttribute="trailing" constant="20" id="CDg-xb-0LF"/>
                             <constraint firstItem="hn8-wn-odq" firstAttribute="top" secondItem="0eV-ei-HHI" secondAttribute="top" constant="40" id="U3x-t8-Aud"/>
-                            <constraint firstItem="0eV-ei-HHI" firstAttribute="bottom" secondItem="IJs-JC-Kcn" secondAttribute="bottom" constant="20" id="a4p-ES-Nva"/>
-                            <constraint firstItem="IJs-JC-Kcn" firstAttribute="leading" secondItem="0eV-ei-HHI" secondAttribute="leading" constant="20" id="u89-Xk-r4c"/>
+                            <constraint firstItem="0eV-ei-HHI" firstAttribute="trailing" secondItem="cDX-Uk-dEo" secondAttribute="trailing" constant="20" id="eVj-oa-PBW"/>
+                            <constraint firstItem="cDX-Uk-dEo" firstAttribute="leading" secondItem="0eV-ei-HHI" secondAttribute="leading" constant="20" id="uSp-So-r6Q"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Text Size" id="Zcf-5P-NNs"/>
                     <connections>
                         <outlet property="previewLabel" destination="hn8-wn-odq" id="XIp-cr-xds"/>
+                        <outlet property="stepSlider" destination="cDX-Uk-dEo" id="zjQ-Om-fH8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="r3m-fo-LT5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-91" y="842"/>
+            <point key="canvasLocation" x="-91.304347826086968" y="841.74107142857144"/>
         </scene>
     </scenes>
     <resources>
-        <image name="1.square" catalog="system" width="128" height="114"/>
-        <image name="9.square" catalog="system" width="128" height="114"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
