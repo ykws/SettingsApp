@@ -362,7 +362,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="1" maxValue="9" continuous="NO" minimumValueImage="1.square" catalog="system" maximumValueImage="9.square" translatesAutoresizingMaskIntoConstraints="NO" id="IJs-JC-Kcn">
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="1" maxValue="9" continuous="NO" minimumValueImage="1.square" catalog="system" maximumValueImage="9.square" translatesAutoresizingMaskIntoConstraints="NO" id="IJs-JC-Kcn" customClass="TouchableSlider">
                                 <rect key="frame" x="18" y="812" width="378" height="31"/>
                                 <connections>
                                     <action selector="sliderDidChange:" destination="fug-K8-UYd" eventType="valueChanged" id="uRV-ue-eAl"/>

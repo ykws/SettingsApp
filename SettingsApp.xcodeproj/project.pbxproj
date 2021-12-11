@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		087872E9276506B200829196 /* TouchableSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = 087872E8276506B200829196 /* TouchableSlider.m */; };
 		08BBA7AD275912F400A9758C /* SearchEngineTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08BBA7AC275912F400A9758C /* SearchEngineTableViewController.m */; };
 		08BBA7B0275917FE00A9758C /* SearchEngineModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 08BBA7AF275917FE00A9758C /* SearchEngineModel.m */; };
 		08BBA7B42759205F00A9758C /* SafariTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08BBA7B32759205F00A9758C /* SafariTableViewController.m */; };
@@ -25,6 +26,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		087872E7276506B200829196 /* TouchableSlider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = TouchableSlider.h; path = TouchableSlider/TouchableSlider.h; sourceTree = "<group>"; };
+		087872E8276506B200829196 /* TouchableSlider.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = TouchableSlider.m; path = TouchableSlider/TouchableSlider.m; sourceTree = "<group>"; };
 		08BBA7AB275912F400A9758C /* SearchEngineTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SearchEngineTableViewController.h; sourceTree = "<group>"; };
 		08BBA7AC275912F400A9758C /* SearchEngineTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SearchEngineTableViewController.m; sourceTree = "<group>"; };
 		08BBA7AE275917FE00A9758C /* SearchEngineModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SearchEngineModel.h; sourceTree = "<group>"; };
@@ -66,6 +69,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		087872E62765066C00829196 /* TouchableSlider */ = {
+			isa = PBXGroup;
+			children = (
+				087872E7276506B200829196 /* TouchableSlider.h */,
+				087872E8276506B200829196 /* TouchableSlider.m */,
+			);
+			name = TouchableSlider;
+			sourceTree = "<group>";
+		};
 		08BBA7AA275912D400A9758C /* SearchEngineViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -191,6 +203,7 @@
 		08F398EC2702448C000F37E6 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				087872E62765066C00829196 /* TouchableSlider */,
 				08F398CF26FF7D4C000F37E6 /* Main.storyboard */,
 			);
 			path = View;
@@ -278,6 +291,7 @@
 				08F398D926FF7D4D000F37E6 /* main.m in Sources */,
 				08BBA7B42759205F00A9758C /* SafariTableViewController.m in Sources */,
 				08F398CB26FF7D4C000F37E6 /* SceneDelegate.m in Sources */,
+				087872E9276506B200829196 /* TouchableSlider.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
